@@ -1,0 +1,9 @@
+jwtToken: 99
+dbPassword: chimp
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+    web-application-type: none
+  application:
+    name: test-selenium-service

@@ -4,8 +4,9 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-@Slf4j
+
 @Component
+@Slf4j
 public class SpringBean {
 
     @Value("${jwtToken:oops}")
@@ -13,14 +14,10 @@ public class SpringBean {
 
     @Value("${dbPassword:nopassword}")
     private String dbPassword;
-    @Value("${pepe:pepe}")
-    private String pepe;
 
-
-
-    public String printProperties() {
-        log.info("PRUEBA JOSUEJwt Token = " + jwtToken);
-        log.info("PRUEBA JOSUE Db password = " + dbPassword);
-        return dbPassword + jwtToken ;
+    public String printProperties(){
+        log.info("Jwt Token = " + jwtToken);
+        log.info("Db password = " + dbPassword);
+        return dbPassword + jwtToken;
     }
 }

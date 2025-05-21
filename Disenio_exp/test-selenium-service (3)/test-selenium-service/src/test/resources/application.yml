@@ -1,0 +1,15 @@
+jwtToken: 99
+dbPassword: chimp
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+    web-application-type: none
+  application:
+    name: test-selenium-service
+
+logging:
+  file:
+    name: C:/data/test-selenium-service/test_selenium_service.log
+  level:
+    root: INFO
